@@ -24,6 +24,31 @@ function App() {
     setScoreTiger(scoreTiger +3)
   }
 
+  // const Timer = () => {
+  //   const [seconds, setSeconds] = useState(0);
+  //   const [isActive, setIsActive] = useState(false);
+  
+  //   function toggle() {
+  //     setIsActive(!isActive);
+  //   }
+  
+  //   function reset() {
+  //     setSeconds(900);
+  //     setIsActive(false);
+  //   }
+  
+  //   useEffect(() => {
+  //     let interval = null;
+  //     if (isActive) {
+  //       interval = setInterval(() => {
+  //         setSeconds(seconds => seconds - 1);
+  //       }, 1000);
+  //     } else if (!isActive && seconds !== 0) {
+  //       clearInterval(interval);
+  //     }
+  //     return () => clearInterval(interval);
+  //   }, [isActive, seconds]);
+
   return (
     <div className="container">
       <section className="scoreboard">
@@ -53,8 +78,13 @@ function App() {
           <button onClick = {updateAwayTouch}  className="awayButtons__touchdown">Away Touchdown</button>
           <button onClick = {updateAwayField}  className="awayButtons__fieldGoal">Away Field Goal</button>
         </div>
-        {/* <div className="homeButtons__touchdown">
-          <button onClick = {updateQuarterValue} className="quarter__Button">Quarter</button>
+        {/* <div className="timerButtons">
+        <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`} onClick={toggle}>
+          {isActive ? 'Pause' : 'Start'}
+        </button>
+        <button className="button" onClick={reset}>
+          Reset
+        </button>
         </div> */}
       </section>
     </div>
