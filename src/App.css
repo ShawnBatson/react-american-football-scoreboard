@@ -113,6 +113,19 @@
   justify-content: space-around;
 }
 
+.button-primary-active {
+  background-color:#656565;
+  border: 1px solid#af750a;
+  color:#ff2d2b;
+}
+
+.button-primary-inactive {
+  background-color:#656565;
+  border: 1px solid#af750a;
+  color:#ff2d2b;
+}
+
+
 .homeButtons__touchdown,
 .homeButtons__fieldGoal,
 .awayButtons__touchdown,

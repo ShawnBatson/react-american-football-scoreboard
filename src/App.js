@@ -25,7 +25,7 @@ function App() {
     setScoreTiger(scoreTiger +3)
   }
 
-  // const Timer = () => {
+  // const Time = e => {
   //   const [seconds, setSeconds] = useState(0);
   //   const [isActive, setIsActive] = useState(false);
   
