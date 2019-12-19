@@ -23,6 +23,7 @@ function App() {
   const updateAwayField = e => {
     setScoreTiger(scoreTiger +3)
   }
+
   return (
     <div className="container">
       <section className="scoreboard">
@@ -52,6 +53,9 @@ function App() {
           <button onClick = {updateAwayTouch}  className="awayButtons__touchdown">Away Touchdown</button>
           <button onClick = {updateAwayField}  className="awayButtons__fieldGoal">Away Field Goal</button>
         </div>
+        {/* <div className="homeButtons__touchdown">
+          <button onClick = {updateQuarterValue} className="quarter__Button">Quarter</button>
+        </div> */}
       </section>
     </div>
   );
